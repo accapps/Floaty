@@ -236,6 +236,10 @@ open class Floaty: UIView {
    */
   fileprivate var accessibilityView : UIView = UIView()
   
+    open override var safeAreaInsets: UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+
   // MARK: - Initialize
   
   /**
